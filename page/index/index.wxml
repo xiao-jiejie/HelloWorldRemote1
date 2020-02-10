@@ -2,3 +2,5 @@
 <text class="txt">Hello World</text>
 <button>按钮</button>
 <button size="mini">迷你按钮</button>
+
+<view>1.知识点1==》tag1</view>
