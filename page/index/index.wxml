@@ -1,0 +1,4 @@
+<!--内置组件-->
+<text class="txt">Hello World</text>
+<button>按钮</button>
+<button size="mini">迷你按钮</button>
