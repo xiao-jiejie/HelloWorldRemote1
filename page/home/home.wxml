@@ -1,0 +1,15 @@
+<!--page/home/home.wxml-->
+<!-- 1.小程序的数据绑定: {{} -》Mustache -->
+<view>Hello {{name}}</view> 
+<view>我的年龄： {{age}}</view>
+
+<!-- 2.列表展示 -->
+<view>{{students[0].name}}</view>
+<!-- 使用循环展示多条数据 -->
+<view>学生id 姓名 年龄</view>
+<view wx:for="{{students}}">{{item.sid}}--{{item.name}}--{{item.age}}</view>
+
+<!-- 3.事件监听改变data -->
+<view>当前计数: {{counter}}</view>
+<button size="mini" bindtap="handleBtnClick">+</button>
+<button size="mini" bindtap="handleSubtraction">-</button>

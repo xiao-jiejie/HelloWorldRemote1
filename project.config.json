@@ -1,4 +1,4 @@
-
+{
 	"description": "项目配置文件",
 	"packOptions": {
 		"ignore": []
@@ -15,13 +15,14 @@
 		"scopeDataCheck": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.4",
+	"libVersion": "2.10.1",
 	"appid": "wx30b38254ecf70c51",
-	"projectname": "Helloworld",
+	"projectname": "HelloWorldRemote1",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,	"simulatorType": "wechat",
+	"isGameTourist": false,
+	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
