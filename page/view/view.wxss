@@ -1,0 +1,44 @@
+/* page/view/view.wxss */
+.box1{
+  background: green;
+  height: 220px;
+  width: 220px;
+  border: 2px solid black;
+}
+.hover-box1{
+  background: red;
+}
+.txt{
+  background-color: pink;
+}
+.hover-txt{
+  background-color: orange;
+  font-size: 30px;
+}
+
+.container1{
+  background: pink;
+  white-space: nowrap;/* 不换行 */
+  
+}
+.item1{
+  width: 60px;
+  height: 60px;
+  background: greenyellow;
+  margin: 10px;
+  text-align: center;
+  line-height: 60px;
+  display: inline-block;
+}
+.container2{
+  background: pink;
+  margin-top: 10px;
+  height: 80px;/* 垂直方向滚动需要设置高度 */
+}
+.item2{
+  height: 60px;
+  background: greenyellow;
+  margin: 10px;
+  text-align: center;
+  line-height: 60px;
+}

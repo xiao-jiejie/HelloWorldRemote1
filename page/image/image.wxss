@@ -1,0 +1,54 @@
+/* page/image/image.wxss */
+/* 页面背景色 */
+page{
+  background: #f6f7f8
+}
+
+.question-form{
+  margin: 25rpx;
+}
+.question-input-area{
+  background-color: #fff;
+  border: 1px solid #f2f2f2;
+  border-radius: 4rpx;
+}
+.question-title-wrap,.weui-cells{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin: 10rpx 30rpx;
+  padding: 20rpx 0;
+}
+.weui-cells{
+  border-bottom: none;
+}
+/* 相当于width:100% */
+.question-title {
+  flex: 1;
+}
+.weui-textarea-counter{
+  flex: 10;
+}
+
+.weui-textarea-counter, .title-input-counter {
+  color: #b3b3b3;
+  font-size: 14px;
+  padding-left: 10rpx;
+}
+.weui-cell::before, .weui-cells::before, .weui-cell::after, .weui-cells::after {
+  border: none;
+}
+
+.question-images-area {
+  padding: 40rpx 0;
+}
+.question-images-tool {
+  display: flex;
+  align-items: center;
+}
+
+.question-images {
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}

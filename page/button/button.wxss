@@ -1,0 +1,10 @@
+/* page/button/button.wxss */
+.pressed{
+  background-color: red;
+  color: white;
+}
+.control image{
+  height: 144rpx;
+  width: 144rpx;
+  border-radius: 50%;
+}

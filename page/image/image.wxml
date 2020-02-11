@@ -1,0 +1,48 @@
+<!--page/image/image.wxml-->
+<text>page/image/image.wxml</text>
+
+<!-- 1.image组件可以是单标签，也可以是双标签
+  默认大小为320*240，组件为行内块元素inline-block  
+  src属性：本地路径/远程地址
+-->
+
+<!-- 2.补充,选择图片或拍照上传-->
+<!-- <button bindtap="handleChooseAlbum">选择图片</button>
+<image src="{{imagePath}}"></image> -->
+
+<view class="question-form">
+
+  <view class="question-input-area">
+
+    <!-- 问题标题  -->
+    <view class="question-title-wrap">
+      <input class="question-title" placeholder="请输入标题" maxlength="40" placeholder-style="color:#b3b3b3;font-size:18px;" bindinput="handleTitleInput"></input>
+      <view class="title-input-counter">{{titleCount}}/40</view>
+    </view>
+
+    <!-- 问题正文  -->
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell">
+        <view class="weui-cell__bd">
+          <textarea class="weui-textarea" placeholder="请输入问题的正文内容。" maxlength="500" placeholder-style="color:#b3b3b3;font-size:14px;" style="height: 12rem" bindinput="handleContentInput" />
+          <view class="weui-textarea-counter">{{contentCount}}/500</view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="question-images-area">
+
+    <!-- 添加图片按钮  -->
+    <view class="question-images-tool">
+      <button type="default" size="mini" bindtap="chooseImage">添加图片</button>
+    </view>
+    <!-- 显示图片  -->
+    <image style="margin-top: 30rpx;" src="{{images}}"></image>
+  </view>
+
+  <!-- 提交表单按钮  -->
+  <button class="weui-btn" type="primary" bindtap="submitForm">提交</button>
+
+</view>

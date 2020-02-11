@@ -13,3 +13,15 @@
 <view>当前计数: {{counter}}</view>
 <button size="mini" bindtap="handleBtnClick">+</button>
 <button size="mini" bindtap="handleSubtraction">-</button>
+
+<!-- 4.获取用户权限-->
+<!--- open-data组件用于展示用户信息 -->
+<open-data type="userAvatarUrl"></open-data><!-- 获取用户头像-->
+<open-data type="userNickName"></open-data><!-- 获取用户名称-->
+<button size="mini" 
+  open-type="getUserInfo" 
+  bindgetuserinfo="handleGetUserInfo">
+  获取授权
+</button>
+<!-- 
+<view wx:for="{{list}}">{{item.title}}</view> -->

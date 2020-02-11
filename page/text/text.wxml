@@ -1,0 +1,19 @@
+<!--page/text/text.wxml-->
+<text>page/text/text.wxml\n</text>
+<text>Text组件\n</text>
+
+<!-- 1.selectable:true -->
+<!-- 默认情况下text中的文本长按是不能选中的 -->
+<text selectable="{{true}}">长按选中\n</text>
+
+<!-- 2.space:决定文本空格大小
+  ensp:半个中文字符大小
+  emsp：一个中文字符大小
+ -->
+<text space="nbsp">Hwllo World\n</text>
+<text space="ensp">Hwllo World\n</text>
+<text space="emsp">Hwllo World\n</text>
+
+<!-- 3.decode:是否解码文本 -->
+<!-- 默认情况下text中的文本长按是不能选中的 -->
+<text decode>5 &gt; 3</text>

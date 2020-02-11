@@ -1,0 +1,18 @@
+<!--page/input/input.wxml-->
+<text>page/input/input.wxml</text>
+
+<!-- 1.input组件 
+  value：默认值
+  type:键盘输入类型（text、number、idcard、digit）
+    password：密码框
+    placeholder：提示符，占位符
+    placeholder-style：指定 placeholder 的样式
+    placeholder-class：指定 placeholder 的样式类
+-->
+<!-- <input placeholder="提示" placeholder-style="color:red" placeholder-class="input-placeholder" bindinput="handleInput" bindfocus="handleFocus" bindblur="handleBlur"></input> -->
+
+<form>
+  <view>姓名
+    <input placeholder="(必填项)" placeholder-style="color:#ccc" ></input>
+  </view>
+</form>

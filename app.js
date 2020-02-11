@@ -1,5 +1,6 @@
 //app.js
 App({
+  //生命周期函数
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,7 +34,18 @@ App({
       }
     })
   },
+  onShow: function (options){
+    // 1.判断小程序的进入场景
+    // console.log(options)
+    switch(options.scene){
+      case 1001:
+        break;
+    }
+  },
+
   globalData: {
-    userInfo: null
+    userInfo: null,
+    name: "tanbaobao",
+    age: 21
   }
 })

@@ -1,0 +1,26 @@
+<!--page/view/view.wxml-->
+<text>page/view/view.wxml</text>
+
+<!-- 1.view基本使用
+  hover-classs：当用户按下组件时，显示的样式
+  hover-stay-time:手指松开后点击态保留时间，单位毫秒，默认400毫秒
+  hover-start-time:按住后多久出现点击态，单位毫秒,默认50
+  hover-stop-propagation:指定是否阻止本节点的祖先节点出现点击态(也就是子节点点击时不触发父节点点击时的样式)，默认false为触发
+ -->
+<!-- <view class="box1" hover-class="hover-box1">
+  <view class="txt" hover-class="hover-txt" hover-stay-time="0" hover-start-time="0" hover-stop-propagation="true">
+    view组件
+  </view>
+</view> -->
+
+<!-- 1.水平滚动 scroll-x -->
+<scroll-view class="container1" scroll-x>
+  <!-- view是块元素，独占一行 -->
+  <view wx:for="{{10}}" class="item1">{{item}}</view>
+</scroll-view>
+
+<!-- 1.垂直滚动 scroll-y -->
+<scroll-view class="container2" scroll-y>
+  <!-- 垂直方向滚动需要设置高度 -->
+  <view wx:for="{{5}}" class="item2">{{item}}</view>
+</scroll-view>

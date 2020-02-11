@@ -2,3 +2,5 @@
 <text class="txt">Hello World</text>
 <button>按钮</button>
 <button size="mini">迷你按钮</button>
+<button size="mini" bindtap="handleBtnClick">按钮</button>
+<view>{{mesg}}</view>

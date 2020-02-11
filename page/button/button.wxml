@@ -1,0 +1,47 @@
+<!--page/button/button.wxml-->
+<text>page/button/button.wxml</text>
+
+<!-- 1.button的基本使用 -->
+<button>默认按钮</button>
+
+<!-- 2.size属性：mini（行内）
+  type:按钮样式（primary绿色、warn红色、default白色）
+  plain：镂空效果
+  disable：禁用
+  loading：名称前是否带 loading 图标
+-->
+<button size="mini">迷你按钮</button>
+
+<button size="mini" type="primary">绿色按钮</button>
+<button size="mini" type="warn">红色按钮</button>
+
+<!-- <button size="mini" plain>按钮</button> -->
+<button size="mini" plain="true">镂空按钮</button>
+
+<!-- disabled：true为禁用，默认为false-->
+<button size="mini" disabled="true">禁用按钮</button>
+
+<button size="mini" loading="true">加载按钮</button>
+
+<button hover-class="pressed">点击触发按钮</button>
+
+<!-- 3.小案例 -->
+<button type="default" disabled="{{disabled}}" plain="{{plain}}" loading="{{loading}}">default</button>
+<button type="primary" disabled="{{disabled}}" plain="{{plain}}" loading="{{loading}}">primary</button>
+<button type="warn" disabled="{{disabled}}" plain="{{plain}}" loading="{{loading}}">warn</button>
+
+<button bindtap="setDisabled">点击设置按钮为disabled禁用属性</button>
+<button bindtap="setPlain">点击设置按钮为plain镂空属性</button>
+<button bindtap="setLoding">点击设置按钮为loading加载属性</button>
+<button open-type="contact" bindcontact="bandleContact">进入客服会话</button>
+
+<!-- 获取用户头像-->
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<!-- 获取用户名称-->
+<!-- <open-data type="userNickName"></open-data> -->
+<view class="control">
+  <image src='{{image}}'></image>
+  <view>{{userName}}</view>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="onGetUserInfo">获取用户信息</button>
+
